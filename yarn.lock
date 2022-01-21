@@ -5,13 +5,6 @@ __metadata:
   version: 5
   cacheKey: 8
 
-"@adrian-gierakowski/private-repo-test@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@adrian-gierakowski/private-repo-test@npm:1.0.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40adrian-gierakowski%2Fprivate-repo-test%2F1.0.1%2F0eb9f0ef93548304655df1f8f4b56128232363632684b17b58662232456c4f02"
-  checksum: 5fd1bbd761b281a0e573c2ec2a1f169f82ab95b412ba20fe7f4c82d2db072166287be3125d7ea9338c3bdb43b68b70fffe00c7a2559f685bd6f77c1318f38f7a
-  languageName: node
-  linkType: hard
-
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
@@ -612,8 +605,10 @@ __metadata:
 
 node-module-test@adrian-gierakowski/node-module-test:
   version: 1.0.0
-  resolution: "node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=744e3e4968c7a4141b5f09ab48f4d510b5638afb"
-  checksum: ea431dd65ec05c8510dda143aa7efa3d0ea0a21c8649e9d8783de2e1df79dce3fc6271530861dcb99e21d6830702e24f1593ef2ab09b37fd3c02a46589be2343
+  resolution: "node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=6c328a6f8716aa29368421a826f168f87b404ed5"
+  dependencies:
+    ramda: ^0.28.0
+  checksum: 9fcb4f37a6502fd2fc5e474c69dd15cc4fcac39978040cae4599b1bfd3774d13880d8c651ad4ba2deebb2fad558b204f23d4e3eb24a9eee7ea6de34ce81448c3
   languageName: node
   linkType: hard
 
@@ -679,6 +674,13 @@ node-module-test@adrian-gierakowski/node-module-test:
     err-code: ^2.0.2
     retry: ^0.12.0
   checksum: f96a3f6d90b92b568a26f71e966cbbc0f63ab85ea6ff6c81284dc869b41510e6cdef99b6b65f9030f0db422bf7c96652a3fff9f2e8fb4a0f069d8f4430359429
+  languageName: node
+  linkType: hard
+
+"ramda@npm:^0.28.0":
+  version: 0.28.0
+  resolution: "ramda@npm:0.28.0"
+  checksum: 44ea6e5010bba70151b6a92d8114a91915e8b5a16105cce65fae58c9d7386b812c429645e35f21141d7087568550ce383bc10ee1a65cdec951f4b69ea457e6a4
   languageName: node
   linkType: hard
 
@@ -893,7 +895,6 @@ node-module-test@adrian-gierakowski/node-module-test:
   version: 0.0.0-use.local
   resolution: "yarn-3-test@workspace:."
   dependencies:
-    "@adrian-gierakowski/private-repo-test": 1.0.1
     keccak: ^3.0.2
     node-module-test: adrian-gierakowski/node-module-test
   bin:

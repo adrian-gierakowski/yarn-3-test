@@ -52,4 +52,8 @@ in
         (with pkgs; [ python3 ])
       ;
     };
+    overrideNodeModuleTestAttrs = old: {
+      # npm_config_sqlite = "/";  # Don't accidentally use the wrong sqlite.
+      preBuild = "echo overrideNodeModuleTestAttrs";
+    };
   }
