@@ -1,0 +1,12 @@
+{
+  "name": "yarn-3-test",
+  "version": "1.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": "bin/index.js",
+  "dependencies": {
+    "@adrian-gierakowski/private-repo-test": "1.0.1",
+    "keccak": "^3.0.2",
+    "node-module-test": "adrian-gierakowski/node-module-test"
+  }
+}
