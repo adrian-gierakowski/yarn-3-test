@@ -1,30 +1,26 @@
 # This is a minimal `default.nix` by yarn-plugin-nixify. You can customize it
 # as needed, it will not be overwritten by the plugin.
-
-{ pkgs ? import <nixpkgs> { } }:
-
+{
+  pkgs ? import nix/pkgs.nix
+}:
 let
-  nix-filter = import (import ./nix/sources.nix).nix-filter;
-  src = nix-filter {
+  src = pkgs.nix-filter {
     root = ./.;
     include = [
-      ./.yarn/releases/yarn-berry.cjs
-      ./.yarn/plugins/yarn-plugin-nixify.cjs
-      ./.yarnrc.yml
-      ./package.json
       ./src/index.js
-      ./yarn.lock
+      ./src/index2.js
       ./bin/index.js
+      ./.yalk
     ];
   };
-  # src = ./.;
 in
   pkgs.callPackage ./yarn-project.nix { } {
     inherit src;
-    envVarNamesToPathStrings = {
+    secretsEnvVars = {
       NPM_REGISTRY_AUTH_TOKEN = "/root/NPM_REGISTRY_AUTH_TOKEN";
     };
-    # symlinkPackages = true;
+    netrcFilePath = "/root/.netrc";
+    symlinkPackages = true;
     overrideNodeHidAttrs = old: {
       # npm_config_sqlite = "/";  # Don't accidentally use the wrong sqlite.
       buildInputs =
@@ -40,10 +36,7 @@ in
     };
     overrideKeccakAttrs = old: {
       # npm_config_sqlite = "/";  # Don't accidentally use the wrong sqlite.
-      nativeBuildInputs =
-        old.buildInputs ++
-        (with pkgs; [ python3 ])
-      ;
+      nativeBuildInputs = with pkgs; [ nodejs.python ];
     };
     overrideSecp256k1Attrs = old: {
       # npm_config_sqlite = "/";  # Don't accidentally use the wrong sqlite.
@@ -55,5 +48,12 @@ in
     overrideNodeModuleTestAttrs = old: {
       # npm_config_sqlite = "/";  # Don't accidentally use the wrong sqlite.
       preBuild = "echo overrideNodeModuleTestAttrs";
+    };
+    overrideStarkwareCryptoCppNodeAttrs = old: {
+      nativeBuildInputs =
+        (old.nativeBuildInputs or []) ++
+        (with pkgs; [ nodejs.python starkware-crypto-cpp cmake ])
+      ;
+      CMAKE_JS_INC = "${pkgs.nodejs}/include/node";
     };
   }

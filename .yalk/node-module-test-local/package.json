@@ -1,0 +1,14 @@
+{
+  "name": "@adrian-gierakowski/private-repo-test-local",
+  "version": "2.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:adrian-gierakowski/private-repo-test.git",
+  "author": "Adrian Gierakowski <agierakowski@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "install": "echo dummy local"
+  }
+}

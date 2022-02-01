@@ -22,5 +22,29 @@
         "type": "tarball",
         "url": "https://github.com/numtide/nix-filter/archive/26dd9843a9dd5ae67b605bfef731e4ef9df10370.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "master",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "e5a50e8f2995ff359a170d52cc40adbcfdd92ba4",
+        "sha256": "0vk0ygsdsz3qzm27xy34250w1gmh99iwr2gw59knkgbnz2ggarp6",
+        "type": "tarball",
+        "url": "https://github.com/nixos/nixpkgs/archive/e5a50e8f2995ff359a170d52cc40adbcfdd92ba4.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "starkware-crypto-cpp-node": {
+        "branch": "master",
+        "description": "nodejs bindings for selected functions from starkware-crypto-cpp libraries ",
+        "homepage": null,
+        "owner": "deversifi",
+        "repo": "starkware-crypto-cpp-node",
+        "rev": "7a2c9a8a476f81a3285a85d57f78e4bc3572d524",
+        "sha256": "1694dcrh3dgy5qf8jpqd6c1q8p3b5q4ydq8r3c3d7zmwh6mx5vq6",
+        "type": "tarball",
+        "url": "https://github.com/deversifi/starkware-crypto-cpp-node/archive/7a2c9a8a476f81a3285a85d57f78e4bc3572d524.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
