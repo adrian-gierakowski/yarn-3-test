@@ -8,11 +8,8 @@
     "index2": "./src/index2.js",
     "justLodash": "./src/justLodash.js"
   },
+  "packageManager": "yarn@3.1.1",
   "dependencies": {
-    "node-module-test": "adrian-gierakowski/node-module-test#commit=40970c1bc7ddaf6ac8ec2914300870628eb81975",
-    "node-module-test-dev": "adrian-gierakowski/node-module-test#commit=fa8ae80352a91634fa9f2f154e99bf2674688344",
-    "node-module-test-no-install": "adrian-gierakowski/node-module-test#commit=40970c1bc7ddaf6ac8ec2914300870628eb81975",
-    "node-module-test-test": "adrian-gierakowski/node-module-test#commit=fa8ae80352a91634fa9f2f154e99bf2674688344"
-  },
-  "packageManager": "yarn@3.1.1"
+    "bitfinex-api-node": "^4.0.15"
+  }
 }
