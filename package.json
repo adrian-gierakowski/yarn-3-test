@@ -4,12 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "api": "./bin/index.js",
-    "index2": "./src/index2.js",
-    "justLodash": "./src/justLodash.js"
+    "justLodash": "./src/justLodash.js",
+    "test": "./bin/index.js"
   },
-  "packageManager": "yarn@3.1.1",
   "dependencies": {
-    "bitfinex-api-node": "^4.0.15"
+    "lodash": "^4.17.21",
+    "node-module-test": "adrian-gierakowski/node-module-test#76faeed96e049728284d635610289c5bbe8dd4f3"
   }
 }

@@ -1,26 +1,14 @@
 {
-    "niv": {
-        "branch": "master",
-        "description": "Easy dependency management for Nix projects",
-        "homepage": "https://github.com/nmattia/niv",
-        "owner": "nmattia",
-        "repo": "niv",
-        "rev": "5830a4dd348d77e39a0f3c4c762ff2663b602d4c",
-        "sha256": "1d3lsrqvci4qz2hwjrcnd8h5vfkg8aypq3sjd4g3izbc8frwz5sm",
-        "type": "tarball",
-        "url": "https://github.com/nmattia/niv/archive/5830a4dd348d77e39a0f3c4c762ff2663b602d4c.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
     "nix-filter": {
-        "branch": "master",
+        "branch": "main",
         "description": "a small self-container source filtering lib",
         "homepage": "",
         "owner": "numtide",
         "repo": "nix-filter",
-        "rev": "26dd9843a9dd5ae67b605bfef731e4ef9df10370",
-        "sha256": "1wl6d14gsjbk5g2fnvi2kld79akdh2b8bqj8j070msdpiph32c50",
+        "rev": "f529f42792ade8e32c4be274af6b6d60857fbee7",
+        "sha256": "1lnsdpas0mf4vvzr1lvh8lnafavciyx6wx032w8z8vd5fca7j8ih",
         "type": "tarball",
-        "url": "https://github.com/numtide/nix-filter/archive/26dd9843a9dd5ae67b605bfef731e4ef9df10370.tar.gz",
+        "url": "https://github.com/numtide/nix-filter/archive/f529f42792ade8e32c4be274af6b6d60857fbee7.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
@@ -29,22 +17,34 @@
         "homepage": "",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "e5a50e8f2995ff359a170d52cc40adbcfdd92ba4",
-        "sha256": "0vk0ygsdsz3qzm27xy34250w1gmh99iwr2gw59knkgbnz2ggarp6",
+        "rev": "8e3fad82be64c06fbfb9fd43993aec9ef4623936",
+        "sha256": "0x4yzsrrzq2q1ah77yydjg35niirx7yxvpzdryfnw0cr5bkszd3d",
         "type": "tarball",
-        "url": "https://github.com/nixos/nixpkgs/archive/e5a50e8f2995ff359a170d52cc40adbcfdd92ba4.tar.gz",
+        "url": "https://github.com/nixos/nixpkgs/archive/8e3fad82be64c06fbfb9fd43993aec9ef4623936.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
-    "starkware-crypto-cpp-node": {
-        "branch": "master",
-        "description": "nodejs bindings for selected functions from starkware-crypto-cpp libraries ",
-        "homepage": null,
-        "owner": "deversifi",
-        "repo": "starkware-crypto-cpp-node",
-        "rev": "7a2c9a8a476f81a3285a85d57f78e4bc3572d524",
-        "sha256": "1694dcrh3dgy5qf8jpqd6c1q8p3b5q4ydq8r3c3d7zmwh6mx5vq6",
+    "yarn-berry-cjs-rhinofi": {
+        "branch": "rhinofi-fork-3.4.1",
+        "description": null,
+        "homepage": "",
+        "owner": "rhinofi",
+        "repo": "yarn-berry-cjs",
+        "rev": "4d14f0f36378091fcff3a4c4c8de4d5b7c3ca9e0",
+        "sha256": "106a4hsfln2hdw17vlgjb40bnx6y9iqib8awlbjlkivxya039wzd",
         "type": "tarball",
-        "url": "https://github.com/deversifi/starkware-crypto-cpp-node/archive/7a2c9a8a476f81a3285a85d57f78e4bc3572d524.tar.gz",
+        "url": "https://github.com/rhinofi/yarn-berry-cjs/archive/4d14f0f36378091fcff3a4c4c8de4d5b7c3ca9e0.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "yarn-plugin-nixify": {
+        "branch": "allow-passing-wrapped-yarn-berry",
+        "description": "Yarn v3 plugin to help with Nix packaging",
+        "homepage": "",
+        "owner": "rhinofi",
+        "repo": "yarn-plugin-nixify",
+        "rev": "244bc28e77f7b966cd76bb092570a5b03fd0d19f",
+        "sha256": "0rya3y0f8c6gymsvmcsfh31vsn6nrrnb3xx3mr1b8r5w61g8f6mh",
+        "type": "tarball",
+        "url": "https://github.com/rhinofi/yarn-plugin-nixify/archive/244bc28e77f7b966cd76bb092570a5b03fd0d19f.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }

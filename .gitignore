@@ -1,4 +1,7 @@
-.yarn/cache
-.yarn/unplugged
-.yarn/install-state.gz
-.pnp.cjs
+.yarn
+.pnp.*
+yarn-error.log
+
+!.yarn/patches
+!.yarn/sdks
+!.yarn/versions
