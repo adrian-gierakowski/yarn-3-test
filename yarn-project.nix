@@ -236,9 +236,9 @@ let
       # Copy in isolated builds.
       echo 'injecting build for node-module-test'
       yarn nixify inject-build \
-        "node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=76faeed96e049728284d635610289c5bbe8dd4f3" \
-        ${isolated."node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=76faeed96e049728284d635610289c5bbe8dd4f3"} \
-        ".yarn/unplugged/node-module-test-https-674b1024dc/node_modules/node-module-test"
+        "node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=3bbac84988bcccc7cd83d5124594c43983b022ac" \
+        ${isolated."node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=3bbac84988bcccc7cd83d5124594c43983b022ac"} \
+        ".yarn/unplugged/node-module-test-https-03a5c12099/node_modules/node-module-test"
       echo 'running yarn install'
 
       runHook postConfigure
@@ -342,9 +342,12 @@ let
 
 cacheEntries = {
 "lodash@npm:4.17.21" = { filename = "lodash-npm-4.17.21-6382451519-eb835a2e51.zip"; sha512 = "eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7"; };
-"node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=76faeed96e049728284d635610289c5bbe8dd4f3" = { filename = "node-module-test-https-674b1024dc-38fd4043a1.zip"; sha512 = "38fd4043a1e4ffb05a23a72cefc87de204591af440a744b9c8263df8ecf8ec6b1ee0a217e916471264dac796982546e214119174faa250b1eea2248ef3fe3228"; };
+"node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=3bbac84988bcccc7cd83d5124594c43983b022ac" = { filename = "node-module-test-https-03a5c12099-19b083b8d6.zip"; sha512 = "19b083b8d65f6094ac4bec5d9ccd4c063d31b20d67a52d86f50889881a9087eaef2d28a7b0a16ae379c1d9b75f288e1019d69c9602a312b2522fd2ed86471547"; };
+"ramda@npm:0.29.0" = { filename = "ramda-npm-0.29.0-ec4babb485-9ab26c06eb.zip"; sha512 = "9ab26c06eb7545cbb7eebcf75526d6ee2fcaae19e338f165b2bf32772121e7b28192d6664d1ba222ff76188ba26ab307342d66e805dbb02c860560adc4d5dd57"; };
 };
-isolated."node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=76faeed96e049728284d635610289c5bbe8dd4f3" = optionalOverride (args.overrideNodeModuleTestAttrs or null) (mkIsolatedBuild { pname = "node-module-test"; version = "1.0.0"; reference = "https://github.com/adrian-gierakowski/node-module-test.git#commit=76faeed96e049728284d635610289c5bbe8dd4f3"; locators = [
-"node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=76faeed96e049728284d635610289c5bbe8dd4f3"
+isolated."node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=3bbac84988bcccc7cd83d5124594c43983b022ac" = optionalOverride (args.overrideNodeModuleTestAttrs or null) (mkIsolatedBuild { pname = "node-module-test"; version = "1.0.0"; reference = "https://github.com/adrian-gierakowski/node-module-test.git#commit=3bbac84988bcccc7cd83d5124594c43983b022ac"; locators = [
+"lodash@npm:4.17.21"
+"node-module-test@https://github.com/adrian-gierakowski/node-module-test.git#commit=3bbac84988bcccc7cd83d5124594c43983b022ac"
+"ramda@npm:0.29.0"
 ]; });
 in optionalOverride overrideAttrs project

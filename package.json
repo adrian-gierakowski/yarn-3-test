@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "node-module-test": "adrian-gierakowski/node-module-test#76faeed96e049728284d635610289c5bbe8dd4f3"
+    "node-module-test": "adrian-gierakowski/node-module-test#commit=3bbac84988bcccc7cd83d5124594c43983b022ac"
   }
 }
